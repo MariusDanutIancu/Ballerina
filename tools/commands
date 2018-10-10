@@ -1,0 +1,12 @@
+
+curl -v -X POST -d '{ "Test": { "ID": "1", "Name": "XYZ", "Description": "Sample test."}}' "http://localhost:9090/myservice/test" -H "Content-Type:application/json"
+
+curl "http://localhost:9090/myservice/test/1"
+
+curl -X PUT -d '{ "Test": { "ID": "1", "Name": "XYZ", "Description": "Updated test."}}' "http://localhost:9090/myservice/test/1" -H "Content-Type:application/json"
+
+curl "http://localhost:9090/myservice/test/1"
+
+curl -X DELETE "http://localhost:9090/myservice/test/1"
+
+curl "http://localhost:9090/myservice/test/1"
